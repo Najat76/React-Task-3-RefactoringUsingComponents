@@ -1,11 +1,8 @@
-import products from "../products";
-import ProductList from "./ProductList";
-import ProductItem from "./ProductItem";
+import React from "react";
 
-function Home() {
-  const productList = products.map();
+const Home = () => {
   return (
-    <div className="body">
+    <div>
       <div>
         <h1 className="text">Cookies and Beyond</h1>
         <h4 className="text">Where cookie maniacs gather</h4>
@@ -15,9 +12,8 @@ function Home() {
           className="shopImage"
         />
       </div>
-      <div className="list">{productList}</div>
     </div>
   );
-}
+};
 
 export default Home;

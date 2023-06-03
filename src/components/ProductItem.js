@@ -1,14 +1,15 @@
-import products from "../products";
+import React from "react";
 
-function ProductItem() {
-  const productItem = { products };
+export const ProductItem = ({ product }) => {
   return (
-    <div className="product">
-      <img className="productImage" alt={product.name} src={product.image} />
-      <p className="text">{product.name}</p>
-      <p className="text">{product.price} KD</p>
+    <div>
+      <div className="product">
+        <img className="productImage" alt={product.name} src={product.image} />
+        <p className="text">{product.name}</p>
+        <p className="text">{product.price} KD</p>
+      </div>
     </div>
   );
-}
+};
 
 export default ProductItem;

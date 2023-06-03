@@ -1,9 +1,9 @@
+import React from "react";
 import ProductItem from "./ProductItem";
 import products from "../products";
 
-function ProductList() {
-  const productList = products.map({ ProductItem });
-  return { ProductItem };
-}
+const ProductList = products.map((product) => (
+  <ProductItem product={product} />
+));
 
 export default ProductList;
